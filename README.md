@@ -48,3 +48,9 @@ El proyecto se realizó utilizando [Just in mind prototyper](https://www.justinm
 ### 5.3 Security Requirements
 ### 5.4 Software Quality Attributes
 ### 5.5 Business Rules
+
+## 6. Plan de calidad
+
+## 7. Arquitectura
+
+## 8. Metodología
