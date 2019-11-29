@@ -1,6 +1,7 @@
 # EATAM
 Projecto final equipo Los Tecolotes (la comida)
 
+# System Requirements
 ## 1.Introduction 
 ### 1.1 Purpose 
 EATAM es un sistema de gig economy para los alumnos, profesores y personal que forma parte del Instituto Tecnológico Autónomo de México. En el cual podrán pedir o entregar comida a quien lo solicite dentro de las instalaciones de la institución. 
@@ -49,8 +50,8 @@ El proyecto se realizó utilizando [Just in mind prototyper](https://www.justinm
 ### 5.4 Software Quality Attributes
 ### 5.5 Business Rules
 
-## 6. Plan de calidad
+# Plan de calidad
 
-## 7. Arquitectura
+# Arquitectura
 
-## 8. Metodología
+# Metodología
