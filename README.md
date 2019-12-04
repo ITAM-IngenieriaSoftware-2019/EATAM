@@ -23,16 +23,16 @@ Esta version es la primera del sistema y este surge tras analizar la necesidades
 Como ya se ha hecho incapie en anterioridad el sistema se puede dividir en dos entidades. Por lo mismo, las funciones del sistemas se dividen en dos. 
 
 Funciones para el comensal: 
- - dffdgsdfgd
+ - comprar: 
 
 Funciones para el repartidor: 
   - Modo repartidor: el usuario podrá definir si desea estar activo como repartidor. En caso de estar activo cuando se haga una petición de orden podrá recibirla y hacer lo necesario para que el comensal reciba su pedido. 
   - Recoger y entregar la orden: el usuario podrá aceptar o rechazar una orden. Si el usuario la acepta se despliega la información sobre la orden, por ejemplo, donde tiene que recogerla, los productos que tiene que recoger, a donde la tiene que llevar y la información sobre el comensal que hizo la orden. 
-
-
 ### 2.3 User Classes and Characteristics
 ### 2.4 Operating Environment 
+Por restricciones definidas por Just in mind, que es que se trabaja sobre la pantalla de un dispositivo en especifico y para replicar a otros hay que ajustarlo manualmente, el sistema esta hecho para trabajar solamente en la pantalla de un iphone X. Por lo mismo, las llamadas a los usuarios solo corresponden a las pantallas establecidas por el sistema operativo IOS y excluyen a las de Android. 
 ### 2.5 Design and Implementation Constraints
+Durante el semestre y horas del día el sistema tendrá una demanda distinta, por ejemplo, en finales y antes de los exámenes de economía habrá más demanda de comensales debido a que muchos estudiantes preferirán que la comida se les lleve al lugar de estudio en vez de ellos salir por ella. Además, se debe tomar en consideracion las áreas que esta prohibido introducir comida, por ejemplo, la biblioteca. Asimismo, considerar que es necesario especificar las restricciones para la entrega de comida, no interrumpir una clase para hacer la entrega. 
 ### 2.6 User Documentation 
 ### 2.7 Assumptions and Dependencies
 
@@ -63,8 +63,15 @@ Funciones para el repartidor:
 ### 5.1 Performance Requirements
 ### 5.2 Safety Requirements
 ### 5.3 Security Requirements
+Es necesario encontrar un método más seguro para verificar que la persona que se registra si forma parte de la institución. La forma de verificar en este momento es que use el correo de la institución para registarse. 
 ### 5.4 Software Quality Attributes
+  - **Portabilidad:**
+  - **Confiabilidad:**
+  - **Mantenibilidad:**
+  - **Facilidad de testeo:**
+  - **Reusabilidad:** 
 ### 5.5 Business Rules
+El uso de este sistema esta limitado a la comunidad del Instituto Tecnológico Autónomo México, ya sea estudiante, catedrático o personal con otro cargo que trabaje dentro de la instituciones. Esto se debe a que el repartidor tendrá que entrar a las instalaciones para entregar la orden por lo que es necesario que tenga permiso para ingresar. Asimismo, la recepción de ordenes se límita a los horarios que los restaurantes esten abiertos. 
 
 # Plan de calidad
 
