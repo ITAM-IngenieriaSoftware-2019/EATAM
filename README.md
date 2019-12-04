@@ -4,20 +4,32 @@ Projecto final equipo Los Tecolotes (la comida)
 # System Requirements
 ## 1.Introduction 
 ### 1.1 Purpose 
-EATAM es un sistema de gig economy para los alumnos, profesores y personal que forma parte del Instituto Tecnológico Autónomo de México. En el cual podrán pedir o entregar comida a quien lo solicite dentro de las instalaciones de la institución. 
+EATAM es un sistema de gig economy para los alumnos, profesores y personal que forma parte del Instituto Tecnológico Autónomo de México. En este sistema podrán pedir o entregar comida a quien lo solicite dentro de las instalaciones de la institución. La finalidad de este producto es que los usuarios puedan pedir comida y/o ganar dinero extra en su tiempo libre. 
 ### 1.2 Document Conventions
 ### 1.3 Intended Audience and Reading Suggestions
+El documento esta planeado para ser leido por desarrolladoras, esto con la intención de poder ser mejorado y actualizado en el futuro. Por lo tanto, en el documento se expondran los detalles técnicos necesarios del sistema. Se recomiendo que la lectura de este sea en orden cronólogico. Además, podrá encontrar referencias para el conocimiento y desarrollo de partes especificas del sistema. 
 ### 1.4 Product Scope 
+El objetivo de este sistema se divide en dos. El primero es el de facilitar al usuario comensal la acción de ir por alimentos hasta su establecimiento deseado. El segundo objetivo es para el usuario repartidor y es poder recibir un ingreso en su tiempo libre en la institución. 
 ### 1.5 References
-El proyecto se realizó utilizando [Just in mind prototyper](https://www.justinmind.com/) 
-
+El sistema se creo utilizando [Just in mind prototyper](https://www.justinmind.com/), que es una plataforma para realizar propototipos de aplicaciones para diferentes positivos. 
 Los iconos que se utilizaron para la elaboración de la aplicación se obtuvieron de: 
   - [FontAwesome](https://fontawesome.com/)
   - [Flaticon](https://www.flaticon.com/home)
 
 ## 2. Overall Description 
 ### 2.1 Product perspective
-### 2.2 Product Functions
+Esta version es la primera del sistema y este surge tras analizar la necesidades de la comunidad. Muchas veces por estar trabajando en cosas personales o de la instituciones la comunidad prefiere continuir con sus deberes que comer. Además, este sistema crea una oportunidad de trabajo flexible. Por lo tanto, se busca satisfacer dos necesidades de la comunidad y siendo la comunidad la que las satisface. 
+### 2.2 Product Functions 
+Como ya se ha hecho incapie en anterioridad el sistema se puede dividir en dos entidades. Por lo mismo, las funciones del sistemas se dividen en dos. 
+
+Funciones para el comensal: 
+ - dffdgsdfgd
+
+Funciones para el repartidor: 
+  - Modo repartidor: el usuario podrá definir si desea estar activo como repartidor. En caso de estar activo cuando se haga una petición de orden podrá recibirla y hacer lo necesario para que el comensal reciba su pedido. 
+  - Recoger y entregar la orden: el usuario podrá aceptar o rechazar una orden. Si el usuario la acepta se despliega la información sobre la orden, por ejemplo, donde tiene que recogerla, los productos que tiene que recoger, a donde la tiene que llevar y la información sobre el comensal que hizo la orden. 
+
+
 ### 2.3 User Classes and Characteristics
 ### 2.4 Operating Environment 
 ### 2.5 Design and Implementation Constraints
