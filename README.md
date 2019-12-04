@@ -11,6 +11,10 @@ EATAM es un sistema de gig economy para los alumnos, profesores y personal que f
 ### 1.5 References
 El proyecto se realizó utilizando [Just in mind prototyper](https://www.justinmind.com/) 
 
+Los iconos que se utilizaron para la elaboración de la aplicación se obtuvieron de: 
+  - [FontAwesome] (https://fontawesome.com/)
+  - [Flaticon] (https://www.flaticon.com/home)
+
 ## 2. Overall Description 
 ### 2.1 Product perspective
 ### 2.2 Product Functions
