@@ -2,9 +2,9 @@
 Projecto final equipo Los Tecolotes (la comida)
 
 Integrantes:
-- Amanda Velasco Gallardo 154415
-- Tabata
-- Víctor
+- Amanda Velasco Gallardo             154415
+- Tábata Ailé González Alvarado       155999
+- Víctor Hugo Flores Pineda           155990
 - Juan José
 
 # System Requirements
@@ -67,15 +67,17 @@ Durante el semestre y horas del día, el sistema tendrá una demanda distinta, p
 
 ## 5. Other Nonfunctional Requirements
 ### 5.1 Performance Requirements
+Es necesario considerar que habrá horas de demanda alta dependiendo la hora del día, exámenes próximo o momento del semestre. Por lo tanto, el sistema debe ser capaz de soportar por lo menos 200 usuarios al mismo tiempo. Estos usuario podrán hacer cualquiera de las diferentes activades (iniciar sesión, pedir comida, hacer un entrega) en la aplicación sin que esta tenga problemas. 
 ### 5.2 Safety Requirements
+Es necesario aplicar los mecanismos de seguridad necesarios para cuidar la integridad de los datos de los usuarios. La pérdida o filtración de infromación personal de los usuarios podría implicar problemas de seguridad, ya que como toda aquella persona registrada en esta plataforma es parte de la institución tenemos que proteger sus correos para asegurarnos de que no se puede utilizar de forma corrupta la información que nos proporcionaron. Asimismo, como se necesita introducir número de tarjeta para realizar los diferentes pagos es esencial contar con mécanismo que protejan los números de las tarjetas, fecha y CVC. La pérdida de sta información implicaría problemas legales serios para EATAM. 
 ### 5.3 Security Requirements
-Es necesario encontrar un método más seguro para verificar que la persona que se registra si forma parte de la institución. La forma de verificar en este momento es que use el correo de la institución para registarse. 
+Es necesario encontrar un método más seguro para verificar que la persona que se registra si forma parte de la institución. Actualmente, la forma de verificar es que el registro se haga utilizando el correo de la institución. 
 ### 5.4 Software Quality Attributes
-  - **Portabilidad:**
-  - **Confiabilidad:**
-  - **Mantenibilidad:**
-  - **Facilidad de testeo:**
-  - **Reusabilidad:** 
+  - **Portabilidad:** El sistema debería de funcionar para dispositivos tanto Android como IOS. Sin embargo, actualmente solo funciona para IOS. 
+  - **Confiabilidad:** El sistema debe realizar las transacciones correctamente y tener la disponibilidad requerida paraasegurar una confiabilidad de 98% 
+  - **Mantenibilidad:** El sistema debe poder mejorse y corregirse de manera sencilla y clara. 
+  - **Facilidad de testeo:** Las pruebas del producto son sencillas, sin embargo, el pago y cobro la única forma de probarlos es haciendo un pedido real. 
+  - **Reusabilidad:** El sistema puede adaptarse para utilizarse para cualquier otra institución que desee tener un servicio de pedido y entrega de como dentro de su comunidad. Lo único que debe ajustarse son las condiciones de registro. 
 ### 5.5 Business Rules
 El uso de este sistema está limitado a la comunidad del Instituto Tecnológico Autónomo México, ya sea estudiante, catedrático o personal con otro cargo que trabaje dentro de la instituciones. Esto se debe a que el repartidor tendrá que entrar a las instalaciones para entregar la orden, por lo que es necesario que tenga permiso para ingresar. Asimismo, la recepción de órdenes se límita a los horarios en que los restaurantes estén abiertos. 
 
