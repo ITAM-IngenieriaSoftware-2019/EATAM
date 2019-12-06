@@ -98,8 +98,11 @@ Esta versión es la primera del sistema y este surge tras analizar la necesidade
 Como ya se ha hecho hincapié anteriormente, el sistema se puede dividir en dos entidades. Por lo mismo, las funciones del sistema se dividen en dos. 
 
 Funciones para el comensal: 
+
  - Petición pedido:  el usuario agrega al carrito el producto que desea consumir. Posteriormente, el usuario debe indicar dónde quiere que se le haga la entrega y confirma el pedido pagando. 
  - Notificación de pedido entregado: el usuario debe confirmar que el pedido le fue entregado correctamente. 
+ - comprar: El usuario puede elegir uno o varios productos de los disponibles para ser entregados a la ubicación dentro del ITAM que este defina.
+
 
 Funciones para el repartidor: 
   - Modo repartidor: el usuario podrá definir si desea estar activo como repartidor. En caso de estar activo cuando se haga una petición de orden podrá recibirla y hacer lo necesario para que el comensal reciba su pedido. 
@@ -123,6 +126,7 @@ La aplicación depende de que el usuario tenga un dispositivo móvil y que tenga
 
 ## 3. External Interface Requirements
 ### 3.1 User Interfaces
+
 - ConfRelacionITAM: Esta pantalla muestra opciones para indicar qué relación tiene el usuario con el ITAM y en caso de que sea estudiante solicita indicar en qué semestre se encuentra, además contiene un botón que actualiza esta información. También contiene un mensaje de error en caso de que no se haya seleccionado un semestre.
 - ConfNombre: Esta pantalla muestra un campo para indicar el nombre del usuario, además contiene un botón que actualiza esta información.
 - ConfPassword: Esta pantalla muestra un campo para indicar una contraseña, además contiene un botón que actualiza esta información.
@@ -164,10 +168,17 @@ Además, esta pantalla tiene un botón en la parte superior izquierda que muestr
 - Valoracion: Esta pantalla muestra una radio list con opciones para calificar al repartidor y un botón que permite al usuario finalizar el pedido.
 ### 3.2 Hardware Interfaces
 La aplicación funciona en dispositivos iPhone X que deben tener por lo menos un sistema operativo iOS 11.
+El sistema funciona en dispositivos moviles tanto android como iphone y requiere de conexión a internet.
+
 ### 3.3 Software Interfaces
 La aplicación requiere obligatoriamente un sistema operativo mayor a iOS 11, utiliza servicios de los bancos para realizar transacciones, tiene contacto con información clasificada del ITAM como: especificaciones de ubicación y datos de personas relacionadas con la institución. Necesita de Wi-fi.
 ### 3.4 Communication Interfaces
-EATAM cuenta con un servidor que permite la vinculación del repartidor con el comensal; contiene comunicaciones con el sistema de correos del ITAM y con su tabla de usuarios; además, maneja comunicaciones con los servidores de los bancos para realizar transacciones.
+
+El sistema requiere de una conexión a internet para poder intercambiar información entre el comensal, los servidores de EATAM y el repartidor, la conexión debe de ser constante pues la información se debe de poder actualizar en tiempo real. EATAM cuenta con un servidor que permite la vinculación del repartidor con el comensal; contiene comunicaciones con el sistema de correos del ITAM y con su tabla de usuarios; además, maneja comunicaciones con los servidores de los bancos para realizar transacciones.
+
+
+
+
 ## 4. System Features
 
 **Features comunes a todos los usuarios**
@@ -176,19 +187,22 @@ EATAM cuenta con un servidor que permite la vinculación del repartidor con el c
 ### 4.3 [Configuraciones de la cuenta del usuario](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/9)
 
 **Features del modo Comensal**
-### 4.4 [Visualización del menú Comensal](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/16)
-### 4.5 [Métodos de pago del Comensal](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/17)
-### 4.6 [Petición de pedido](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/18)
-### 4.7 [Notificación de pedido entregado](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/19)
-### 4.8 [Pantalla de perfil del Comensal](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/20) 
+### 4.4 [Menú para desplegar opcines del comensal](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/21)
+### 4.5 [Pantalla de inicio comensal](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/22)
+### 4.6 [Método de pago comensal](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/17)
+### 4.7 [Establecimiento de ubicación comensal](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/16)
+### 4.8 [Proceso de petición](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/18)
+### 4.9 [Notificación pedido netregado](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/19)
+### 4.10 [Petición de pedido](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/18)
 
 **Features del modo Repartidor**
-### 4.9 [Menú para navegar por las funcionalidades del Repartidor](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/6)
-### 4.10 [Perfil del usuario y activación del modo Repartidor](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/13)
-### 4.11 [Información del pedido en curso que el usuario Repartidor está completando](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/8)
-### 4.12 [Modificación de métodos en que el usuario Repartidor recibe sus pagos](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/12)
-### 4.13 [FAQs y contacto a soporte para el usuario Repartidor](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/11)
-### 4.14 [Notificaciones de pedidos entrantes](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/7)
+### 4.11 [Menú para navegar por las funcionalidades del Repartidor](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/6)
+### 4.12 [Perfil del usuario y activación del modo Repartidor](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/13)
+### 4.13 [Información del pedido en curso que el usuario Repartidor está completando](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/8)
+### 4.14 [Modificación de métodos en que el usuario Repartidor recibe sus pagos](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/12)
+### 4.15 [FAQs y contacto a soporte para el usuario Repartidor](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/11)
+### 4.16 [Notificaciones de pedidos entrantes](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/7)
+
 
 ## 5. Other Nonfunctional Requirements
 ### 5.1 Performance Requirements
