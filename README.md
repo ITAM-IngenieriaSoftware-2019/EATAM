@@ -109,6 +109,7 @@ Los usuarios que interactuarán con la aplicación son:
   - Estudiantes: todo individuo que esté tomando clases en la institución, ya sea licenciatura, maestría, doctorado, diplomado, etc. 
   - Profesores: todos los catedráticos de la institución.
   - Personal adicional: todo aquella persona que su trabajo consista en prestar un servicio a la institutición. El personal adcional esta formado por secretarias, mantenimiento, limpieza, administrativos, personal del restaurante y estacionamiento, etc.
+
 Los usuarios tendrán gran habilidad para identificar y conocer el uso de la aplicación debido a que existen más aplicaciones con el mismo concepto, además el ITAM se caracteriza por brindar un pensamiento crítico y analítico, por lo que utilizarán la aplicación de manera sencilla e intuitiva sin ningún tipo de dificultad.
 ### 2.4 Operating Environment 
 Por restricciones definidas por **Just in mind**, que es que se trabaja sobre la pantalla de un dispositivo en específico y para replicar a otros hay que ajustarlo manualmente, el sistema está hecho para trabajar solamente en la pantalla de un iPhone X. Por lo mismo, las llamadas a los usuarios solo corresponden a las pantallas establecidas por el sistema operativo iOS y excluyen a las de Android. 
@@ -122,7 +123,47 @@ La aplicación depende de que el usuario tenga un dispositivo móvil y que tenga
 
 ## 3. External Interface Requirements
 ### 3.1 User Interfaces
+- ConfRelacionITAM: Esta pantalla muestra opciones para indicar qué relación tiene el usuario con el ITAM y en caso de que sea estudiante solicita indicar en qué semestre se encuentra, además contiene un botón que actualiza esta información. También contiene un mensaje de error en caso de que no se haya seleccionado un semestre.
+- ConfNombre: Esta pantalla muestra un campo para indicar el nombre del usuario, además contiene un botón que actualiza esta información.
+- ConfPassword: Esta pantalla muestra un campo para indicar una contraseña, además contiene un botón que actualiza esta información.
+- ConfEmail: Esta pantalla muestra un campo para indicar el correo electrónico del usuario, además contiene un botón que actualiza esta información. También contiene un mensaje de error que aparece cuando el correo solicitado no tiene el dominio @itam.mx
+- ConfTelefono: Esta pantalla muestra un campo para indicar el número telefónico del usuario, además contiene un botón que actualiza esta información.
+- ConfApellido: Esta pantalla muestra un campo para indicar el apellido del usaurio, además contiene un botón que actualiza esta información.
+- ConfFoto: Esta pantalla muestra el carrete del usuario para que elija una foto de perfil, contiene un botón para agregarla y uno para eliminarla de la selección.
+- Configuracion: Esta pantalla muestra el nombre, apellido, número de teléfono, correo, contraseña, foto y relación con el ITAM y te permite dar clic en cada opción para modificar la información agregada.
+- HomePage: Esta pantalla muestra el ícono de Comensal y el de Repartidor como botones. 
+- Registro: Esta pantalla muestra campos de texto: Usuario, email, contraseña y confirmar contraseña, estos se llenan para registrar al usuario, además tiene un botón que confirma el registro.
+- Apple ID Login: Esta pantalla muestra los siguientes campos de texto: Email y Password, arroja un error si el usuario no está registrado en la aplicación y contiene dos botones: el primero para iniciar sesión y el segundo para registrarse.
+- Loading screen: Esta pantalla es la principal/inicial y muestra el Logo de la aplicación.
+- RepartidorHP: Esta pantalla representa el menú principal de la sección de Repartidor. Muestra la imagen del repartidor, la información general en un recuadro (nombre, relación con el ITAM, antigüedad, total de pedidos y calificación promedio); un recuadro con una gráfica indicando los ingresos semanales; un recuadro que indica una estadística de los lugares en los que llegan más pedidos y una opción para activar el modo repartidor.
+Si el modo repartidor está activo, en esta pantalla aparece la notificación de que un pedido ha sido registrado y brinda la opción con los botones de Rechazar o Aceptar; si el usuario da clic en Aceptar, arroja a otra pantalla, si da clic en Rechazar, arroja un mensaje advirtiendo que la calificación del repartidor será modificada.
+Además, esta pantalla tiene un botón en la parte superior izquierda que muestra un menú; este menú contiene los siguientes botones  direccionadores: Mi Perfil, Orden en curso, Métodos de Pago, Centro de Ayuda, Configuración y Cambiar Modo, todos estos envían a otras pantallas. 
+- RepartidorMetodosPago: Esta pantalla muestra las tarjetas registradas en la aplicación, además botones que te permite agregar o eliminar alguna tarjeta.
+- RepartidorNuevoMetodoPago:Esta pantalla muestra campos de texto: Número de tarjeta, Fecha de vencimiento y código de seguridad. Arroja un error en caso de que la tarjeta no sea válida y tiene un botón para continuar con el registro de la tarjeta.
+- RepartidorOrden:Esta pantalla muestra la información del pedido y del cliente al que será entregado el mismo, contiene un botón que permite llamar al comensal y los siguiente botones adicionales: Finalizar y Cancelar. Si el usuario da clic en el botón de Finalizar, la aplicación envía un recuadro que permite calificar al comensal, si elige Cancelar, arroja un mensaje que indica que al cancelar el repartidor puede ser penalizado y en el mismo mensaje muestra dos botones: Aceptar y Rechazar.
+- RepartidorAyuda: Esta pantalla muestra algunas preguntas frecuetes de los comensales con los siguientes recuadros direccionadores: No he recibido mi pago, No funciona el código de pago, Llamar a un asistente, Mandar mensaje a un asistente y Ver mis mensajes con soporte.
+- RepartidorTelefono: Esta pantalla muestra la llamada al soporte de la aplicación.
+- RepartidorFotoCliente: Esta pantalla muestra la fotografía del comensal.
+- RepartidorCodigoPago: Esta pantalla muestra un código QR.
+- Pago: Esta pantalla muestra en un párrafo las razones por las que el repartidor no ha recibido su pago y muestra dos botones: un ícono de cara feliz y uno de cara triste.
+- Codigo: Esta pantalla muestra en un párrafo las razones por las no ha funcionado el código de pago y muestra dos botones: un ícono de cara feliz y uno de cara triste.
+- Convo: Esta pantalla muestra un chat y un cuadro de texto con un botón que te permite escribir un mensaje y enviarlo.
+- ComensalHP: Esta pantalla muestra un botón en la parte superior izquierda que te direcciona a otra pantalla; muestra un campo de búsqueda y muestra recuadros direccionadores que contienen elementos que forman parte del menú de la aplicación.
+- MenuComensal: Esta pantalla muestra un menú; este menú contiene los siguientes botones  direccionadores: Datos de Perfil, Centro de Ayuda, Historial de pedidos, Métodos de pago, Configuración y Cambiar Modo, todos estos envían a otras pantallas.
+- histPedidos: Esta pantalla muestra el historial de los pedidos con la siguiente información: Fecha, Ubicación y Total pagado, además contiene una scrollbar para poder moverse y visualizar todos los pedidos.
+- ayudaComensal: Esta pantalla muestra la llamada con el comensal.
+- comensalMetodosPago: Esta pantalla muestra las tarjetas registradas en la aplicación, además botones que permiten agregar o eliminar alguna tarjeta.
+- ChilaquilesPollo: Esta pantalla muestra la imagen de un platillo; opciones para añadir elementos al platillo que pueden ser seleccionadas por medio de radiobuttons; un cuadro de texto para agregar comentarios; un ícono de + y uno de - para agregar o quitar 1 unidad del platillo y un botón para continuar.
+- datosPerfilComensal: Esta pantalla muestra la información del comensal: Foto, Nombre, Usuario, Total de pedidos y Calificación promedio.
+- ComensalHP2: Esta pantalla muestra los mismos elementos que la pantalla "ComensalHP" y además un botón en la parte inferior que muestra el total a pagar y permite continuar con el pedido.
+- Ubicacion: Esta pantalla muestra botones direccionadores dependiendo de la zona general en la que se encuentra el usuario.
+- Ubicacion2: Esta pantalla muestra botones que permiten especificar de manera detallada dónde se encuentra e usuario.
+- infoConfirm: Esta pantalla muestra la información de la ubicación del usuario; una lista desplegable para elegir tarjeta de crédito o débito; cuadros de texto para colocar: número de tarjeta, fecha de vencimiento y código de seguridad; un mensaje con el total a pagar y un botón para proceder con el pago.
+- esperaEntrega: Esta pantalla muestra la siguiente información del repartidor: Foto, Nombre, Número de entregas.
+- esperaEntrega2: Esta pantalla muestra lo mismo que la pantalla "esperaEntrega" y un botón que permite al usuario confirmar el pedido.
+- Valoracion: Esta pantalla muestra una radio list con opciones para calificar al repartidor y un botón que permite al usuario finalizar el pedido.
 ### 3.2 Hardware Interfaces
+
 ### 3.3 Software Interfaces
 ### 3.4 Communication Interfaces
 
