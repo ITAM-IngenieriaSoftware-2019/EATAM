@@ -273,7 +273,11 @@ Sin embargo, a un nivel más alto, ya de infrasestructura, se espera que todos l
 Como se comentaba anteriormente, el usuario repartidor deberá tener un alto conocimiento del campus, los salones y oficinas más difíciles de encontrar.
 Será necesario tener un convenio con los locales cercanos al itam para que la aplicación ueda ser utilizada. Se tendrá que hablar con ellos sobre las ventajas y el concepto que ofrece la aplicación para que no estén desinformados. 
 ## 15. Responsibilities
-
+Las encargadas del dearrollo de la sección de Repartidor y del login son Tabata y Amanda.
+Los encargados del desarrollo de la sección de Comensal y templates son Víctor y Juan José.
+Tabata es la encargada de estructurar la parte de ambas correctamente, mientras que Amanda se encargará de las funcionalidades avanzadas. Por otro lado, Víctor administra los templates y desarrolla el menú y Juan José desarrolla toda la parte vinculada con el pedido.
+Posteriormente, en conjunto se encargan de documentar a detalle todo lo realizado anteriormente.
+Amanda y Juan José se asegurarán de que este perfectamente bien redactada la documentación, mientras que Víctor y Tabata pulirán detalles del prototipo.
 ## 16. Schedule
 Dado que hasta ahora solo se tiene un prototipo, el desarrollo como tal empezaría desde cero, por esto se necesitarían al menos seis meses para poder poner en el mercado la primera iteración de la aplicación, aun con un catálogo limitado a los locales más cercanos a las instituciones, para posteriormente ir expandiendo el mercado y agregando mayor funcionalidad.
 
