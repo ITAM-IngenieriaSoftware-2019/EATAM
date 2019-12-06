@@ -29,7 +29,8 @@ Esta versión es la primera del sistema y este surge tras analizar la necesidade
 Como ya se ha hecho hincapié anteriormente, el sistema se puede dividir en dos entidades. Por lo mismo, las funciones del sistema se dividen en dos. 
 
 Funciones para el comensal: 
- - comprar: 
+ - Petición pedido:  el usuario agrega al carrito el producto que desea consumir. Posteriormente, el usuario debe indicar donde quiere que se le haga la entrega y confirma el pedido pagando. 
+ - Notificación de pedido entregado: el usuario debe confirmar que el pedido le fue emtrgado correctamente. 
 
 Funciones para el repartidor: 
   - Modo repartidor: el usuario podrá definir si desea estar activo como repartidor. En caso de estar activo cuando se haga una petición de orden podrá recibirla y hacer lo necesario para que el comensal reciba su pedido. 
@@ -40,7 +41,9 @@ Por restricciones definidas por **Just in mind**, que es que se trabaja sobre la
 ### 2.5 Design and Implementation Constraints
 Durante el semestre y horas del día, el sistema tendrá una demanda distinta, por ejemplo, en finales y antes de los exámenes de economía habrá más demanda de comensales debido a que muchos estudiantes preferirán que la comida se les lleve al lugar de estudio en vez de ellos salir por ella. Además, se debe tomar en consideración las áreas en que está prohibido introducir comida, por ejemplo, la biblioteca. Asimismo, considerar que es necesario especificar las restricciones para la entrega de comida, con tal de no interrumpir una clase para hacer la entrega. 
 ### 2.6 User Documentation 
+
 ### 2.7 Assumptions and Dependencies
+El sistema depende de la autorización del Instituto Tecnológico Autonomo de México de poder hacer la recepción y entrega del pedido dentro de las instalaciones. Además de que los restaurantes y locales a los alrededor de la institución esten dispuestos a ser parte de ITAM. 
 
 ## 3. External Interface Requirements
 ### 3.1 User Interfaces
@@ -56,14 +59,19 @@ Durante el semestre y horas del día, el sistema tendrá una demanda distinta, p
 ### 4.3 [Configuraciones de la cuenta del usuario](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/9)
 
 **Features del modo Comensal**
+### 4.4 [Visualización del menú comensal](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/16)
+### 4.5 [Métodos de pago comensal](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/17)
+### 4.6 [Petición de pedido](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/18)
+### 4.7 [Notificación pedido entregado](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/19)
+### 4.8 [Pantalla perfil comensal](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/20) 
 
 **Features del modo Repartidor**
-### 4. [Menú para navegar por las funcionalidades del Repartidor](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/6)
-### 4. [Perfil del usuario y activación del modo Repartidor](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/13)
-### 4. [Información del pedido en curso que el usuario Repartidor está completando](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/8)
-### 4. [Modificación de métodos en que el usuario Repartidor recibe sus pagos](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/12)
-### 4. [FAQs y contacto a soporte para el usuario Repartidor](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/11)
-### 4. [Notificaciones de pedidos entrantes](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/7)
+### 4.9 [Menú para navegar por las funcionalidades del Repartidor](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/6)
+### 4.10 [Perfil del usuario y activación del modo Repartidor](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/13)
+### 4.11 [Información del pedido en curso que el usuario Repartidor está completando](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/8)
+### 4.12 [Modificación de métodos en que el usuario Repartidor recibe sus pagos](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/12)
+### 4.13 [FAQs y contacto a soporte para el usuario Repartidor](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/11)
+### 4.14 [Notificaciones de pedidos entrantes](https://github.com/ITAM-IngenieriaSoftware-2019/EATAM/issues/7)
 
 ## 5. Other Nonfunctional Requirements
 ### 5.1 Performance Requirements
@@ -77,7 +85,7 @@ Es necesario encontrar un método más seguro para verificar que la persona que 
   - **Confiabilidad:** El sistema debe realizar las transacciones correctamente y tener la disponibilidad requerida paraasegurar una confiabilidad de 98% 
   - **Mantenibilidad:** El sistema debe poder mejorse y corregirse de manera sencilla y clara. 
   - **Facilidad de testeo:** Las pruebas del producto son sencillas, sin embargo, el pago y cobro la única forma de probarlos es haciendo un pedido real. 
-  - **Reusabilidad:** El sistema puede adaptarse para utilizarse para cualquier otra institución que desee tener un servicio de pedido y entrega de como dentro de su comunidad. Lo único que debe ajustarse son las condiciones de registro. 
+  - **Reusabilidad:** El sistema puede adaptarse para utilizarse para cualquier otra institución que desee tener un servicio de pedido y entrega de como dentro de su comunidad. Lo único que debe ajustarse son las condiciones de registro y restricciones de entrega. 
 ### 5.5 Business Rules
 El uso de este sistema está limitado a la comunidad del Instituto Tecnológico Autónomo México, ya sea estudiante, catedrático o personal con otro cargo que trabaje dentro de la instituciones. Esto se debe a que el repartidor tendrá que entrar a las instalaciones para entregar la orden, por lo que es necesario que tenga permiso para ingresar. Asimismo, la recepción de órdenes se límita a los horarios en que los restaurantes estén abiertos. 
 
@@ -85,4 +93,6 @@ El uso de este sistema está limitado a la comunidad del Instituto Tecnológico 
 
 # Arquitectura
 
+
 # Metodología
+La metodología que utilizamos para realizar este proyecto fue Feature Driven. Primeramente, dividimos las funcionalidades en 3: comensal, repartidor y en general. Cada una de estas funcionalidades principales consiste en la agrupación de otras funcionalidades que hacen que el sistema funcione. Elegimos esta metodología por que consideramos que por el tipo de problema era la mejor opciones, ya que debiamos concentrarnos en que la aplicacion pudiera hacer procesos específicos. 
