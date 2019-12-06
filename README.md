@@ -272,13 +272,13 @@ Será necesario tener un convenio con los locales cercanos al itam para que la a
 ## 15. Responsibilities
 
 ## 16. Schedule
-Dado que hasta ahora solo se tiene un prototipo, el desarrollo como tal se considera empezaría desde cero, por esto se necesitarian al menos seis meses para poder poner en el mercado la primera iteración de la aplicación, aun con un catálogo limitado a los locáles más cercanos a la instituciones, para poseteriormente ir expandiendo el maercado y agregando mayor funcinoalidad
+Dado que hasta ahora solo se tiene un prototipo, el desarrollo como tal empezaría desde cero, por esto se necesitarían al menos seis meses para poder poner en el mercado la primera iteración de la aplicación, aun con un catálogo limitado a los locales más cercanos a las instituciones, para posteriormente ir expandiendo el mercado y agregando mayor funcionalidad.
 
 ## 17. Planning Risks and Contingencies
-Debe de considerarse que como cualquier aplicación que maneja transacciones de dinero esiste un riesgo de casuar algún mal económico a los usuarios debido a un funcinamiento erroneo. Es por esto que el mejor plan de contingencia es manejar de forma seccionada e indipendiente cada pedido, de esta forma si llega a existir alguna vulnerabilidad o falla, se puede rastrear y ser resulta individualmente sin que esta se extienda a más usuarios.
+Debe de considerarse que como cualquier aplicación que maneja transacciones de dinero existe un riesgo de casuar algún mal económico a los usuarios debido a un funcinamiento erróneo. Es por esto que el mejor plan de contingencia es manejar de forma seccionada e independiente cada pedido, de esta forma si llega a existir alguna vulnerabilidad o falla, se puede rastrear individualmente sin que esta se extienda a más usuarios.
 
 ## 18. Approvals
-Si bien nadie externo al ITAM debería de ingresar o se esta rompiendo alguna regla directa, seria necesario obtener la aprovación de las autoridades escolares correspondientes para que no hubiera problema con que se realizaran las entregas al interior de las intalzaciones y con la menor disrupción posible a las actividades académicas en curso.
+Si bien nadie externo al ITAM debería de ingresar porque se estaría rompiendo alguna regla directa, sería necesario obtener la aprobación de las autoridades escolares correspondientes para que no hubiera problema con que se realizaran las entregas al interior de las instalaciones y con la menor disrupción posible a las actividades académicas en curso.
 
 ## 19. Glossary
 
