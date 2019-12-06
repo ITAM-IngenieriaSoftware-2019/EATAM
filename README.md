@@ -1,11 +1,11 @@
 # EATAM
-Projecto final equipo Los Tecolotes (la comida)
+Proyecto final equipo Los Tecolotes (la comida)
 
 Integrantes:
 - Amanda Velasco Gallardo             154415
 - Tábata Ailé González Alvarado       155999
 - Víctor Hugo Flores Pineda           155990
-- Juan José
+- Juan José López Jaramillo           155903
 
 # Tabla de contenido
 1. System Requirements
@@ -79,6 +79,7 @@ Integrantes:
 EATAM es un sistema de gig economy para los alumnos, profesores y personal que forman parte del Instituto Tecnológico Autónomo de México. En este sistema podrán pedir o entregar comida a quien lo solicite dentro de las instalaciones de la institución. La finalidad de este producto es que los usuarios puedan pedir comida y/o ganar dinero extra en su tiempo libre. 
 ### 1.2 Document Conventions
 El documento se basa en la jerarquía especificada por la IEEE. Las prioridades fueron definidas dependiendo de la importancia de funcionalidad del feature. Para la estimación se utilizó una escala extremadamente sencilla, la cual incluye las prioridades baja, media y alta.
+A lo largo del documento se presentará un elemento característico que ronda en torno al propósito descrito anteriormente, se presentará la descripción de las dos secciones incluídas en EATAM: Comensal y Repartidor. Este documento abarcará la descripción de cada sección de manera individual, siempre y cuando el apartado involucre alguna descripción de las funcionalidades de la aplicación.
 
 ### 1.3 Intended Audience and Reading Suggestions
 El documento está planeado para ser leído por desarrolladores, esto con la intención de poder ser mejorado y actualizado en el futuro. Por lo tanto, en el documento se expondrán los detalles técnicos necesarios del sistema. Se recomienda que la lectura de este sea en orden cronólogico. Además, se podrán encontrar referencias para el conocimiento y desarrollo de partes específicas del sistema. 
@@ -107,7 +108,8 @@ Funciones para el repartidor:
 Los usuarios que interactuarán con la aplicación son: 
   - Estudiantes: todo individuo que esté tomando clases en la institución, ya sea licenciatura, maestría, doctorado, diplomado, etc. 
   - Profesores: todos los catedráticos de la institución.
-  - Personal adicional: todo aquella persona que su trabajo consista en prestar un servicio a la institutición. El personal adcional esta formado por secretarias, mantenimiento, limpieza, administrativos, personal del restaurante y estacionamiento, etc. 
+  - Personal adicional: todo aquella persona que su trabajo consista en prestar un servicio a la institutición. El personal adcional esta formado por secretarias, mantenimiento, limpieza, administrativos, personal del restaurante y estacionamiento, etc.
+Los usuarios tendrán gran habilidad para identificar y conocer el uso de la aplicación debido a que existen más aplicaciones con el mismo concepto, además el ITAM se caracteriza por brindar un pensamiento crítico y analítico, por lo que utilizarán la aplicación de manera sencilla e intuitiva sin ningún tipo de dificultad.
 ### 2.4 Operating Environment 
 Por restricciones definidas por **Just in mind**, que es que se trabaja sobre la pantalla de un dispositivo en específico y para replicar a otros hay que ajustarlo manualmente, el sistema está hecho para trabajar solamente en la pantalla de un iPhone X. Por lo mismo, las llamadas a los usuarios solo corresponden a las pantallas establecidas por el sistema operativo iOS y excluyen a las de Android. 
 ### 2.5 Design and Implementation Constraints
@@ -115,7 +117,8 @@ Durante el semestre y horas del día, el sistema tendrá una demanda distinta. P
 ### 2.6 User Documentation 
 La documentación necesaria para el desarrollo de este producto se puede encontrar en el punto 1.5, donde se especifican las URLs de las herramientas que se utilizaron para elaborar la aplicación. Asimismo, se recomienda utilizar otras plataformas como [YouTube ](https://www.youtube.com/?hl=es-419&gl=MX)para ver tutoriales donde se especifique paso a paso cómo crear ciertos elementos en la aplicación. 
 ### 2.7 Assumptions and Dependencies
-El sistema depende de la autorización del Instituto Tecnológico Autonomo de México de poder hacer la recepción y entrega del pedido dentro de las instalaciones, además de que los restaurantes y locales a los alrededores de la institución estén dispuestos a ser parte de EATAM. 
+El sistema depende de la autorización del Instituto Tecnológico Autonomo de México de poder hacer la recepción y entrega del pedido dentro de las instalaciones, además de que los restaurantes y locales a los alrededores de la institución estén dispuestos a ser parte de EATAM.
+La aplicación depende de que el usuario tenga un dispositivo móvil y que tenga un conocimiento de nivel medio del uso del mismo. Asume que las personas que integran la institución tienen tarjeta de crédito y/o débito, que la persona que reparte el pedido es realmente la persona registrada en la aplicación y que la persona que realiza una petición brindas su ubicación de manera verídica.
 
 ## 3. External Interface Requirements
 ### 3.1 User Interfaces
