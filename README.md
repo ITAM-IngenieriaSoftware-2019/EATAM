@@ -163,10 +163,11 @@ Además, esta pantalla tiene un botón en la parte superior izquierda que muestr
 - esperaEntrega2: Esta pantalla muestra lo mismo que la pantalla "esperaEntrega" y un botón que permite al usuario confirmar el pedido.
 - Valoracion: Esta pantalla muestra una radio list con opciones para calificar al repartidor y un botón que permite al usuario finalizar el pedido.
 ### 3.2 Hardware Interfaces
-
+La aplicación funciona en dispositivos iPhone X que deben tener por lo menos un sistema operativo iOS 11.
 ### 3.3 Software Interfaces
+La aplicación requiere obligatoriamente un sistema operativo mayor a iOS 11, utiliza servicios de los bancos para realizar transacciones, tiene contacto con información clasificada del ITAM como: especificaciones de ubicación y datos de personas relacionadas con la institución. Necesita de Wi-fi.
 ### 3.4 Communication Interfaces
-
+EATAM cuenta con un servidor que permite la vinculación del repartidor con el comensal; contiene comunicaciones con el sistema de correos del ITAM y con su tabla de usuarios; además, maneja comunicaciones con los servidores de los bancos para realizar transacciones.
 ## 4. System Features
 
 **Features comunes a todos los usuarios**
@@ -227,7 +228,7 @@ El uso de este sistema está limitado a la comunidad del Instituto Tecnológico 
 ## 19. Glossary
 
 # Arquitectura
-
+EATAM maneja varias arquitecturas, la principal es por eventos ya que el sistema debe identificar cuando un evento 
 
 # Metodología
 La metodología que utilizamos para realizar este proyecto fue Feature Driven. Partiendo de un bosquejo muy básico de lo que la aplicación debía realizar, en primer lugar, dividimos las funcionalidades en 3 según el modo al que pertenecen: comensal, repartidor y en general. Cada una de estas funcionalidades principales consiste en la agrupación de otras funcionalidades que hacen que el sistema funcione, las cuales fueron detalladas en segundo lugar mediante issues. Posteriormente, se realizó el seguimiento del desarrollo de cada modo mediante proyectos en GitHub cuyas tareas eran dichos issues. Elegimos esta metodología porque consideramos que por el tipo de problema era la mejor opción, ya que debíamos concentrarnos en que la aplicación pudiera hacer procesos específicos caracterizados por el tipo de usuario.
