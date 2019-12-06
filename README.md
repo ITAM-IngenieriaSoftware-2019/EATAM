@@ -7,6 +7,72 @@ Integrantes:
 - Víctor Hugo Flores Pineda           155990
 - Juan José
 
+# Tabla de contenido
+1. System Requirements
+    1. Introduction
+        1. Purpose
+        2. Document conventions
+        3. Intended Audience and Reading Suggestions
+        4. Product Scope
+        5. References
+    2. Overall Description
+        1. Product perspective
+        2. Product Functions
+        3. User Classes and Characteristics
+        4. Operating Environment
+        5. Design and Implementation Constraints
+        6. User Documentation
+        7. Assumptions and Dependencies
+    3. External Interface Requirements
+        1. User Interfaces
+        2. Hardware Interfaces
+        3. Software Interfaces
+        4. Communication Interfaces
+    4. System Features
+        1. Entrada al sistema con credenciales de usuario
+        2. Registro de nuevo usuario
+        3. Configuraciones de la cuenta del usuario
+        4. Visualización del menú Comensal
+        5. Métodos de pago del Comensal
+        6. Petición de pedido
+        7. Notificación de pedido entregado
+        8. Pantalla de perfil del Comensal
+        9. Menú para navegar por las funcionalidades del Repartidor
+        10. Perfil del usuario y activación del modo Repartidor
+        11. Información del pedido en curso que el usuario Repartidor está completando
+        12. Modificación de métodos en que el usuario Repartidor recibe sus pagos
+        13. FAQs y contacto a soporte para el usuario Repartidor
+        14. Notificaciones de pedidos entrantes
+    5. Other Nonfunctional Requirements
+        1. Performance Requirements
+        2. Safety Requirements
+        3. Security Requirements
+        4. Software Quality Attributes
+        5. Business Rules
+2. Plan de calidad
+    1. Test Plan Identifier
+    2. References
+    3. Introduction
+    4. Test Items
+    5. Software Risk Issues
+    6. Features to be Tested
+    7. Features not to be Tested
+    8. Approach
+    9. Item Pass/Fail Criteria
+    10. Suspension Criteria and Resumption Requirements
+    11. Test Deliverables
+    12. Remaining Test Tasks
+    13. Environmental Needs
+    14. Staffing and Training Needs
+    15. Responsibilities
+    16. Schedule
+    17. Planning Risks and Contingencies
+    18. Approvals
+    19. Glossary
+3. Arquitectura
+4. Metodología
+5. Documentación para replicar
+
 # System Requirements
 ## 1. Introduction 
 ### 1.1 Purpose 
@@ -29,7 +95,7 @@ Los íconos que se utilizaron para la elaboración de la aplicación se obtuvier
   - [Flaticon](https://www.flaticon.com/home)
 
 ## 2. Overall Description 
-### 2.1 Product perspective
+### 2.1 Product Perspective
 Esta versión es la primera del sistema y este surge tras analizar la necesidades de la comunidad. Muchas veces, por estar trabajando en cosas personales o de la institución, la comunidad prefiere continuar con sus deberes que comer. Además, este sistema crea una oportunidad de trabajo flexible. Por lo tanto, se busca satisfacer dos necesidades de la comunidad y que sea la comunidad la que las satisfaga. 
 ### 2.2 Product Functions 
 Como ya se ha hecho hincapié anteriormente, el sistema se puede dividir en dos entidades. Por lo mismo, las funciones del sistema se dividen en dos. 
@@ -125,3 +191,5 @@ El uso de este sistema está limitado a la comunidad del Instituto Tecnológico 
 
 # Metodología
 La metodología que utilizamos para realizar este proyecto fue Feature Driven. Partiendo de un bosquejo muy básico de lo que la aplicación debía realizr, en primer lugar, dividimos las funcionalidades en 3 según el modo al que pertenecen: comensal, repartidor y en general. Cada una de estas funcionalidades principales consiste en la agrupación de otras funcionalidades que hacen que el sistema funcione, las cuales fueron detalladas en segundo lugar mediante issues. Posteriormente, se realizó el seguimiento del desarrollo de cada modo mediante proyectos en GitHub cuyas tareas eran dichos issues. Elegimos esta metodología porque consideramos que por el tipo de problema era la mejor opción, ya que debíamos concentrarnos en que la aplicación pudiera hacer procesos específicos caracterizados por el tipo de usuario.
+
+# Documentación para replicar
