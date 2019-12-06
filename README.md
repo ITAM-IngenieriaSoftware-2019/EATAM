@@ -8,7 +8,7 @@ Integrantes:
 - Juan José
 
 # System Requirements
-## 1.Introduction 
+## 1. Introduction 
 ### 1.1 Purpose 
 EATAM es un sistema de gig economy para los alumnos, profesores y personal que forman parte del Instituto Tecnológico Autónomo de México. En este sistema podrán pedir o entregar comida a quien lo solicite dentro de las instalaciones de la institución. La finalidad de este producto es que los usuarios puedan pedir comida y/o ganar dinero extra en su tiempo libre. 
 ### 1.2 Document Conventions
@@ -100,9 +100,28 @@ Es necesario encontrar un método más seguro para verificar que la persona que 
 El uso de este sistema está limitado a la comunidad del Instituto Tecnológico Autónomo México, ya sea estudiante, catedrático o personal con otro cargo que trabaje dentro de la instituciones. Esto se debe a que el repartidor tendrá que entrar a las instalaciones para entregar la orden, por lo que es necesario que tenga permiso para ingresar. Asimismo, la recepción de órdenes se límita a los horarios en que los restaurantes estén abiertos. 
 
 # Plan de calidad
+## 1. Test Plan Identifier
+## 2. References
+## 3. Introduction
+## 4. Test Items
+## 5. Software Risk Issues
+## 6. Features to be Tested
+## 7. Features not to be Tested
+## 8. Approach
+## 9. Item Pass/Fail Criteria
+## 10. Suspension Criteria and Resumption Requirements
+## 11. Test Deliverables
+## 12. Remaining Test Tasks
+## 13. Environmental Needs
+## 14. Staffing and Training Needs
+## 15. Responsibilities
+## 16. Schedule
+## 17. Planning Risks and Contingencies
+## 18. Approvals
+## 19. Glossary
 
 # Arquitectura
 
 
 # Metodología
-La metodología que utilizamos para realizar este proyecto fue Feature Driven. Primeramente, dividimos las funcionalidades en 3: comensal, repartidor y en general. Cada una de estas funcionalidades principales consiste en la agrupación de otras funcionalidades que hacen que el sistema funcione. Elegimos esta metodología por que consideramos que por el tipo de problema era la mejor opciones, ya que debiamos concentrarnos en que la aplicacion pudiera hacer procesos específicos. 
+La metodología que utilizamos para realizar este proyecto fue Feature Driven. Partiendo de un bosquejo muy básico de lo que la aplicación debía realizr, en primer lugar, dividimos las funcionalidades en 3 según el modo al que pertenecen: comensal, repartidor y en general. Cada una de estas funcionalidades principales consiste en la agrupación de otras funcionalidades que hacen que el sistema funcione, las cuales fueron detalladas en segundo lugar mediante issues. Posteriormente, se realizó el seguimiento del desarrollo de cada modo mediante proyectos en GitHub cuyas tareas eran dichos issues. Elegimos esta metodología porque consideramos que por el tipo de problema era la mejor opción, ya que debíamos concentrarnos en que la aplicación pudiera hacer procesos específicos caracterizados por el tipo de usuario.
