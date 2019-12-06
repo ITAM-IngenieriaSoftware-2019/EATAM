@@ -208,17 +208,59 @@ El uso de este sistema está limitado a la comunidad del Instituto Tecnológico 
 
 # Plan de calidad
 ## 1. Test Plan Identifier
+JustInMind Prototyper 8.7.4
 ## 2. References
+JustInMind Prototyper 8.7.4
+https://www.youtube.com/watch?v=Y-JqVKQwdPE
+https://www.youtube.com/watch?v=bdyDSOHe4ZY
+Tecnologías Rappi, S.A.P.I. de C.V.
+UBER B.V.
 ## 3. Introduction
+De manera singular, el objetivo del proyecto es crear un prototipo que simule un sistema gig economy, utilizando como base el ITAM. Sin embargo, si nos vamos más allá de lo singular, el objetivo de este proyecto principalmente es identificar todos los elementos que pueden ser estandarizados, evaluados y gestionados en un proyecto, conocer la importancia de la documentación y el manejo de un proyecto y por suuesto se presenta la dificultad que abarca el trabajo en equipo.  
 ## 4. Test Items
+- Validación correcta de que el usuario o contraseña sean correctos.
+- Que el sistema no permita una petición de un restaurante o tienda que esté cerrado.
+- Que las pantallas se desplieguen correctamente.
+- Que los botones direccionen a las pantallas correctas.
+- Que los botones tengan los links correctos.
 ## 5. Software Risk Issues
+- Que el sistema bancario este fuera de servicio.
+- Que el servidor de la aplicación se encuentre fuera de servicio.
+- Que el pago del repartidor le llegue en tiempo y forma.
 ## 6. Features to be Tested
+- Que los cálculos de los elementos agregados en el carrito sean correctos.
+- Que el código de pago este bien generado.
+- Que el sistema valide correctamente que la tarjeta de crédito o débito este registrada en un banco.
+- Que el sistema valide correctamente el correo del usuario esté registrado en la base de datos del ITAM.
+- Que el sistema calcule el promedio de las calificaciones de manera correcta.
+- Que las gráficas muestres información verídica y confiable.
 ## 7. Features not to be Tested
+- Que las preguntas frecuentes realmente sean frecuentes.
+- Que el usuario tenga señal para llamar a atención a clientes.
+- Que el usuario tenga wi-fi o datos móviles para utilizar la aplicación.
+- Que el usuario no tenga bloqueos en sus tarjetas de crédito y/o débito.
 ## 8. Approach
+Se ha considerado realizar este prototipo con JustInMind Prototyper, ya que este programa es el más adecuado para lo que se necesita. En este programa se ha decidido crear el prototipo con el iPhone X ya que en promedio es el tipo de celular más usado en el ITAM.
+Se ha considerado que el prototipo del aplicativo únicamente podrá ser utilizado para sistema operativo iOS11 o superior.
+Se estableció que el pago sería por tarjeta únicamente ya que el manejo de dinero físico podría ser alterado y sesgado debido a que se espera que los pedidos no abarquen montos tan altos.
+El proyecto debe tener la posibilidad de registrar usuarios para que estos puedan ser identificados, ya sea para repartir o para recibir pedidos. Es por esto que el aplicativo debe tener una sección para cada enfoque, estas secciones deberán tener distintas configuraciones que coincidan con las tareas de los usuarios de cada sección. El repartidor tendrá que tener elementos estadísticos que le ayuden a conocer su rendimiento, ya sean calificaciones, así como ingresos semanales para conocer su desempeño. Mientras que el comensal debe de tener la oportunidad de calificar y recibir en su ubicación lo que desee de lugares que se encuentren cerca del ITAM.
+El objetivo de esto es facilitar el acceso a los alimentos y bebidas cercanos al ITAM y al mismo tiempo ofrecer una posibilidad de obtención de ingresos mientras el usuario estudia.
+Será importante considerar que el tiempo de entrega en algunas ocasiones podrá extenderse debido a que las ubicaciones pueden no ser 100% exactas, además, el conocimiento del campus para el repartidor será esencial, por lo que tendrá que aprender en la práctica de su labor en caso de que no lo conozca correctamente. 
 ## 9. Item Pass/Fail Criteria
+Respecto al criterio de fallas, se espera que a niveles de interfaz: íconos, pantallas, links, etc., todos los elementos puedan ser probados y comprobar que funcionan correctamente.
+Sin embargo, a un nivel más alto, ya de infrasestructura, se espera que todos los elementos puedan ser probados, pero que un porcentaje pequeño de ellos tenga algunas fallas insignificantes, por ejemplo, falla en la validación de "ñ" o acentos en los nombres, etc.
 ## 10. Suspension Criteria and Resumption Requirements
+- Se deberá dejar de realizar pruebas cuando las primeras dos veces el sistema identifique una tarjeta no existente y una sí existente, es decir, una vez que se compruebe que la validación fue exitosa.
+- También se dejarán de hacer pruebas sobre delays en el sistema, que tarde un poco más de lo acotumbrado en desplegarse una pantalla o en realizarse una instrucción.
+- No continuar con pruebas de un mejor diseño de los elementos de la aplicación.
 ## 11. Test Deliverables
+- Documentación general de las pruebas de EATAM.
+- Documentación específica de las pruebas de EATAM (análisis de los elementos de cada sección: Comensal y Repartidor).
+- Capturas de pantalla para comprobar que funciona correctamente o comprobar que no funciona correctamente cierta funcionalidad.
+- Registros de error en cada sección.
+- Análisis avanzado del margen de error del proyecto.
 ## 12. Remaining Test Tasks
+
 ## 13. Environmental Needs
 ## 14. Staffing and Training Needs
 ## 15. Responsibilities
@@ -228,7 +270,7 @@ El uso de este sistema está limitado a la comunidad del Instituto Tecnológico 
 ## 19. Glossary
 
 # Arquitectura
-EATAM maneja varias arquitecturas, la principal es por eventos ya que el sistema debe identificar cuando un evento 
+EATAM maneja varias arquitecturas, la principal es por eventos ya que el sistema debe identificar cuando un evento (pedido) es asignado a un repartidor para que otro evento no sea asignado a ese mismo repartidor en ese momento. Además, debe distinguir entre un pedido y otro. Administra los pedidos de acuerdo al orden en el que fueron hechos y se asignan de manera que no haya repetidos o empalmen. También maneja microservicios, ya que utilizará los usuarios registrados en la base de datos del ITAM, así como la de las tarjetas de los bancos para identificar si sí están registradas en alguno de estos.
 
 # Metodología
 La metodología que utilizamos para realizar este proyecto fue Feature Driven. Partiendo de un bosquejo muy básico de lo que la aplicación debía realizar, en primer lugar, dividimos las funcionalidades en 3 según el modo al que pertenecen: comensal, repartidor y en general. Cada una de estas funcionalidades principales consiste en la agrupación de otras funcionalidades que hacen que el sistema funcione, las cuales fueron detalladas en segundo lugar mediante issues. Posteriormente, se realizó el seguimiento del desarrollo de cada modo mediante proyectos en GitHub cuyas tareas eran dichos issues. Elegimos esta metodología porque consideramos que por el tipo de problema era la mejor opción, ya que debíamos concentrarnos en que la aplicación pudiera hacer procesos específicos caracterizados por el tipo de usuario.
