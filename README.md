@@ -78,11 +78,7 @@ Integrantes:
 ### 1.1 Purpose 
 EATAM es un sistema de gig economy para los alumnos, profesores y personal que forman parte del Instituto Tecnológico Autónomo de México. En este sistema podrán pedir o entregar comida a quien lo solicite dentro de las instalaciones de la institución. La finalidad de este producto es que los usuarios puedan pedir comida y/o ganar dinero extra en su tiempo libre. 
 ### 1.2 Document Conventions
-El documento se basa en la jerarquía especificada por la IEEE. Las prioridades fueron definidas dependiendo de la importancia de funcionalidad del feature. Para la estimación se utilizó lo que nombramos como "La escala de elote". A continuación se muestra dicha escala: 
-    1. Esquite
-    2. Elote asado
-    3. Elote con mayonesa, queso y chile del que no pica
-    4. Elote con mayonesa, queso y chile del que pica
+El documento se basa en la jerarquía especificada por la IEEE. Las prioridades fueron definidas dependiendo de la importancia de funcionalidad del feature. Para la estimación se utilizó una escala extremadamente sencilla, la cual incluye las prioridades baja, media y alta.
 
 ### 1.3 Intended Audience and Reading Suggestions
 El documento está planeado para ser leído por desarrolladores, esto con la intención de poder ser mejorado y actualizado en el futuro. Por lo tanto, en el documento se expondrán los detalles técnicos necesarios del sistema. Se recomienda que la lectura de este sea en orden cronólogico. Además, se podrán encontrar referencias para el conocimiento y desarrollo de partes específicas del sistema. 
