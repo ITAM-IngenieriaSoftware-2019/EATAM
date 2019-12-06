@@ -262,8 +262,15 @@ Sin embargo, a un nivel más alto, ya de infrasestructura, se espera que todos l
 ## 12. Remaining Test Tasks
 
 ## 13. Environmental Needs
+- Será necesario que el usuario tenga un iPhone X y que tenga iOS11 o mayor.
+- Es necesario que el usuario tenga una tarjeta de crédito o de débito.
+- Es necesario que el usuario tenga una relación directa en el ITAM.
+- Indispensable para el usuario poseer internet para el uso del aplicativo.
 ## 14. Staffing and Training Needs
+Como se comentaba anteriormente, el usuario repartidor deberá tener un alto conocimiento del campus, los salones y oficinas más difíciles de encontrar.
+Será necesario tener un convenio con los locales cercanos al itam para que la aplicación ueda ser utilizada. Se tendrá que hablar con ellos sobre las ventajas y el concepto que ofrece la aplicación para que no estén desinformados. 
 ## 15. Responsibilities
+
 ## 16. Schedule
 ## 17. Planning Risks and Contingencies
 ## 18. Approvals
